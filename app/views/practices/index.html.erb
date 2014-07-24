@@ -2,15 +2,19 @@
 
 <table  border="1">
   <thead>
-<!--     <tr>
-      <th colspan="3"></th>
-    </tr> -->
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Edit</th>
+      <th>Destroy</th>
+    </tr>
   </thead>
 
   <tbody>
     <% @practices.each do |practice| %>
       <tr>
         <td><%= link_to practice.name, practice %></td>
+        <td><%= practice.address%></td>
         <td><%= link_to 'Edit', edit_practice_path(practice) %></td>
         <td><%= link_to 'Destroy', practice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -21,3 +25,4 @@
 <br>
 
 <%= link_to 'New Practice', new_practice_path %>
+<%= link_to 'Back',root_path %>
