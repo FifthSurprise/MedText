@@ -1,3 +1,6 @@
+<% if (@practice.nil?) %>
+<h1> No practices were found in that radius.</h1>
+<% else %>
 <h1> The closest practice is:</h1>
 <h2>
   <%= @practice.name %> at 
@@ -5,3 +8,14 @@
   <h3>
     <%= @practice.address %>
   </h3>
+<% end %>
+
+<h1>Search again</h1>
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:address, "Search for Practices Near:") %>
+  <%= text_field_tag(:address) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+
+<%= link_to 'Back',root_path %>

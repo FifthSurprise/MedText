@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Practice.create(name: "Murray Hill Medical Group",
+address: "317 E 34th St. New York, NY 10016")
+
+Practice.create(name: "Dr. Howard M. Baruch, MD",
+address: "663 Palisade Ave, Cliffside Park, NJ 07010")
+
+Practice.create(name: "Dermatology & Laser Surgery",
+address: "2125 Center Ave, Fort Lee, NJ 07024")
+
+Practice.create(name: "Weill Cornell Medical College",
+address: "East 69th Street, New York, NY")
