@@ -39,7 +39,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'geocoder'
-
+gem 'pg'
 group :test, :development do
   gem "rspec-rails"
   gem "capybara"
