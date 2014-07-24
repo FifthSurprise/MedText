@@ -1,28 +1,15 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Coding Challenge From MedText.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This coding challenge is a location system.  Given a database of addresses (ie. practices), the application will find the closest practice to any given separate address (or zip code).
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This is running off of an Sqlite3 database.
+
+To start, download the application and run the following commands:
+
+rake db:create
+rake db:migrate
+rake db:seed
+rails server
