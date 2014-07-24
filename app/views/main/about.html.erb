@@ -1,0 +1,8 @@
+
+<h1>This is the main page.</h1>
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:address, "Search for Practices Near:") %>
+  <%= text_field_tag(:address) %>
+  <%= submit_tag("Search") %>
+<% end %>

@@ -2,7 +2,7 @@ class CreatePractices < ActiveRecord::Migration
   def change
     create_table :practices do |t|
       t.string :name
-      t.address :address
+      t.string :address
       t.decimal :latitude
       t.decimal :longitude
       t.timestamps
